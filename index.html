@@ -356,8 +356,8 @@
         <div style="font-size:13px;color:rgba(17,24,39,0.6)">POT + Plan Parcial + CAR + IDIGER/riesgo + servicios / agua</div>
       </div>
       <div style="background:var(--ink);padding:22px 24px">
-        <div class="mono" style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:10px">4) Riesgo VIP/VIS + cierre financiero</div>
-        <div style="font-size:13px;color:rgba(255,255,255,0.55)">Cesiones, compensación, viabilidad financiera VIS/VIP. PDF 1 pág Go/No-Go.</div>
+        <div class="mono" style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:10px">4) Riesgo VIP/VIS + Tradición (CTL)</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.55)">Cesiones, compensación, tradición/CTL y viabilidad financiera. Formato Ejecutivo Wall Street.</div>
       </div>
     </div>
 
@@ -366,7 +366,7 @@
       <div style="background:var(--ink);color:#fff;padding:40px 36px;display:flex;flex-direction:column">
         <span style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;background:#fff;color:var(--ink);padding:5px 12px;width:fit-content;margin-bottom:24px">Solicitar prueba 24h</span>
         <h3 class="serif" style="font-size:32px;line-height:0.95;color:#fff;margin-bottom:20px">Pruebe antes<br>de contratar.<br><span style="color:var(--gold)">Yo pongo el predio a trabajar.</span></h3>
-        <p style="font-size:13px;line-height:1.7;color:rgba(255,255,255,0.5);margin-bottom:28px">Este formulario no es "contacto". Es una solicitud de prueba 24h. Usted trae el predio, yo traigo la matriz anti-devolución + Revit + QGIS.</p>
+        <p style="font-size:13px;line-height:1.7;color:rgba(255,255,255,0.5);margin-bottom:28px">Este formulario no es "contacto". Es una solicitud de prueba 24h. Usted trae el predio y su certificado de tradición; yo entrego la matriz anti-devolución + cabida Revit/QGIS + radiografía legal.</p>
         <div style="display:flex;flex-direction:column;gap:12px;margin-top:auto">
           <div class="ws-check-row"><div class="ws-check-icon">✓</div><span><strong style="color:#fff">Sin intermediarios.</strong> Directo a 311 262 1281 y a alejandrodecozan@gmail.com</span></div>
           <div class="ws-check-row"><div class="ws-check-icon">✓</div><span><strong style="color:#fff">Confirmación en 2 h hábiles.</strong> Te confirmo que recibí el predio y si la información está completa (dirección o CHIP, área y tipo de proyecto).</span></div>
@@ -415,10 +415,20 @@
                 <option>Mixto</option><option>Lote urbanismo</option>
               </select>
             </div>
+            <div>
+              <label class="form-label">Certificado de Tradición (PDF / Img)</label>
+              <div class="file-upload-wrapper">
+                <input type="file" id="f-ctl" accept=".pdf,image/*" class="file-upload-input">
+                <label for="f-ctl" class="file-upload-btn" id="f-ctl-label">
+                  <span class="file-upload-icon">📄</span>
+                  <span class="file-upload-text" id="f-ctl-text">Cargar CTL (Opcional)</span>
+                </label>
+              </div>
+            </div>
           </div>
           <div class="form-row">
             <label class="form-label">Qué quiere validar</label>
-            <textarea class="form-input" id="f-msg" rows="3" placeholder="Ej: Validar cabida VIS con POT 555, ¿cierra con cesión compensada? ¿Riesgo CAR?" style="resize:vertical"></textarea>
+            <textarea class="form-input" id="f-msg" rows="3" placeholder="Ej: Validar cabida VIS con POT 555, ¿cierra con cesión compensada? ¿Riesgo de tradición o gravámenes en CTL?" style="resize:vertical"></textarea>
           </div>
           <button type="submit" class="btn-submit">Enviar Solicitud 24h →</button>
           <div class="form-note mono">Mailto directo · Sin base de datos · alejandrodecozan@gmail.com</div>
