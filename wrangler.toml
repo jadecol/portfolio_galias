@@ -8,5 +8,5 @@ compatibility_date = "2026-10-07"
 directory = "./dist"
 
 [vars]
-NOTIFICATION_EMAIL = "alejandrodecozan@gmail.com"
+NOTIFICATION_EMAIL = "jdecozantech@gmail.com"
 
