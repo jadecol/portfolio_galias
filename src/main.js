@@ -36,12 +36,15 @@ Email: alejandrodecozan@gmail.com`;
     try {
       await navigator.clipboard.writeText(textToCopy);
       const span = document.getElementById('copy-cover-text');
-      const originalText = span.textContent;
-      span.textContent = '✓ ¡Carta copiada al portapapeles!';
+      const copyIcon = document.getElementById('copy-icon');
+      const originalText = span ? span.textContent : '';
+      if (span) span.textContent = '¡Carta copiada al portapapeles!';
+      if (copyIcon) copyIcon.innerHTML = '<polyline points="20 6 9 17 4 12"></polyline>';
       copyBtn.style.borderColor = 'var(--gold)';
       copyBtn.style.color = 'var(--gold)';
       setTimeout(() => {
-        span.textContent = originalText;
+        if (span) span.textContent = originalText;
+        if (copyIcon) copyIcon.innerHTML = '<rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>';
         copyBtn.style.borderColor = '';
         copyBtn.style.color = '';
       }, 3000);
