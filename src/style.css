@@ -228,8 +228,17 @@ header{position:sticky;top:0;z-index:40;backdrop-filter:blur(18px);background:rg
 .final-check-row{display:flex;align-items:flex-start;gap:12px;font-size:13px;color:rgba(17,24,39,0.72);margin-bottom:12px;line-height:1.55;overflow-wrap:break-word;word-break:break-word}
 .final-chk{width:18px;height:18px;background:var(--ink);color:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
 .final-chk svg{display:block}
-.btn-postulate{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:20px;width:100%;height:54px;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;background:var(--ink);color:#fff;text-decoration:none;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;transition:.2s}
+
+.final-cta-group{margin-top:24px;display:flex;flex-direction:column;gap:12px}
+.btn-postulate{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;height:54px;background:var(--ink);color:#fff;text-decoration:none;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;font-weight:700;transition:.2s;border:none;cursor:pointer}
 .btn-postulate:hover{background:var(--red)}
+.final-cta-secondary{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn-sub-action{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 16px;background:var(--warm);border:1px solid rgba(17,24,39,0.12);color:var(--ink);text-decoration:none;font-size:12px;font-weight:600;letter-spacing:0.03em;cursor:pointer;transition:all .15s;font-family:inherit}
+.btn-sub-action:hover{background:#fff;border-color:var(--gold);color:var(--ink)}
+
+@media(max-width:680px){
+  .final-cta-secondary{grid-template-columns:1fr}
+}
 
 /* ── ANIMS ── */
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
