@@ -1,7 +1,12 @@
 # Opcional: despliegue en Cloudflare (static assets). Nombre distinto al proyecto anterior
 # para no sobrescribirlo. Ajusta "name" si ya tienes otro destino.
 name = "portfolio"
+main = "worker.js"
 compatibility_date = "2026-10-07"
 
 [assets]
 directory = "./dist"
+
+[vars]
+NOTIFICATION_EMAIL = "alejandrodecozan@gmail.com"
+
