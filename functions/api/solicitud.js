@@ -163,8 +163,8 @@ export async function onRequestPost(context) {
 </html>
     `;
 
-    const notificationEmail = env.NOTIFICATION_EMAIL || 'jdecozantech@gmail.com';
-    const fromEmail = env.RESEND_FROM || 'Prueba 24H <onboarding@resend.dev>';
+    const notificationEmail = env.NOTIFICATION_EMAIL || 'alejandrodecozan@gmail.com';
+    const fromEmail = env.RESEND_FROM || 'Prueba 24H <solicitudes@deecozan.com>';
 
     const resendResponse = await fetch('https://api.resend.com/emails', {
       method: 'POST',

@@ -8,5 +8,6 @@ compatibility_date = "2026-10-07"
 directory = "./dist"
 
 [vars]
-NOTIFICATION_EMAIL = "jdecozantech@gmail.com"
+NOTIFICATION_EMAIL = "alejandrodecozan@gmail.com"
+RESEND_FROM = "Prueba 24H <solicitudes@deecozan.com>"
 
